@@ -8,14 +8,19 @@ ul{
 
 }
 .lists{
-  position: relative;
+  
   display: flex;
   flex-direction: column;
   
-  width: 100px;
+  position: absolute;
+  margin-top: 17px;
+  width: 82%;
+
+
+  
   height: 190px;
   margin-left: 30px;
-  margin-top: 200px;
+
  
   border: 3px solid black;
   background-image: url("./images/cover1.jpeg");
@@ -36,10 +41,10 @@ li{
   margin-right: 5px;
   padding: 8px; 
 }
-
+/* 
 li:hover{
 background-color:blue;
-}
+} */
 .toggle-button{
   position: absolute;
   /* margin-top:3%; */
@@ -50,19 +55,44 @@ background-color:blue;
 
   border-bottom-left-radius: 50px;
   border-bottom-right-radius:50px ;
-  background-image: url("./images/wheel.jpeg");
+  
 }
 
 .outer-container{
   position: relative;
   background-image: url("./images/ipod-screen.jpeg");
   background-repeat: no-repeat;
-  margin-left: 530px;
+  margin-top: 150px;
+  margin-left: 310px;
   height:220px;
   width: 300px;
+}
 
-  
+.mouse-rotate{
+  position: absolute;
+  /* margin-top:3%; */
+  margin-left:310px;
+  width:300px;
+  height:280px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius:50px ;
+  background-image: url("./images/wheel.jpeg");
+}
+.menu-btn{
+margin-left: 130px;
+margin-top:50px;
+height:80px;
+}
+#menu-btn{
+  width: 55px;
+}
 
-  
-  
+#enter-btn{
+  margin-left: 120px;
+  margin-top: -34px;
+  height:70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: black;
+
 }
