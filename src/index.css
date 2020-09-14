@@ -1,5 +1,8 @@
 body{
   margin:0;
+  /* background-image: url("./images/applestore.jpeg");
+  /* background-size: cover;
+  background-repeat: no-repeat; */ 
 }
 
 ul{
@@ -28,6 +31,8 @@ ul{
 }
 .inside-list{
   background-color: grey;
+  background-image: url("./images/iscreen.jpeg");
+  background-size: cover;
   width:50%;
   padding: 0px;
   margin:0px;
@@ -35,11 +40,18 @@ ul{
 }
 li{
   list-style: none;
-  background-color:grey;
+  background-color:transparent;
   margin-top: 5px;
   margin-left: 3px;
   margin-right: 5px;
   padding: 8px; 
+}
+.inside-coverflow{
+  background-image: url("./images/coverflow.jpeg");
+  background-size: contain;
+  background-repeat: repeat-x;
+  height: 250px;
+  
 }
 /* 
 li:hover{
@@ -83,9 +95,17 @@ margin-left: 130px;
 margin-top:50px;
 height:80px;
 }
+.menu-btn button{
+  border: 0px;
+
+ background-color: white;
+ color: grey;
+ text-transform: uppercase;
+}
 #menu-btn{
   width: 55px;
 }
+
 
 #enter-btn{
   margin-left: 120px;
@@ -93,6 +113,160 @@ height:80px;
   height:70px;
   width: 70px;
   border-radius: 50%;
-  background-color: black;
+  /* background-color: black; */
 
+}
+.active {
+  background: #2185d0 !important;
+  width:100%;
+  color: black;
+}
+
+.music-card{
+  background-image: url("./images/imusic.jpg");
+  background-repeat: repeat-x;
+  background-size: contain;
+  /* width: 300px; */
+}
+#inside-music{
+  position: absolute;
+  /* margin-top:3%; */
+  
+  margin-left:-1px;
+  margin-top: 220px;
+  z-index: 2;
+  width:300px;
+  min-height: 150% !important;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius:200px ;
+}
+#inside-music #menu-btn{
+ background-color: white;
+ 
+ color:grey;
+ text-transform: capitalize;
+  border: hidden;
+  margin-top: 10px;
+
+}
+#inside-music .menu-btn{
+  margin-left: 130px;
+  margin-top:19px;
+  height:80px;
+  }
+
+  #inside-music #enter-btn{
+    margin-left: 120px;
+    margin-top: -20px;
+    height:70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: grey;
+  }
+  .artist{
+    background-image: url("./images/Ed_Sheeran-6886_\(cropped\).jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:150px;
+    height: 170px;
+  }
+  .artist-info{
+    margin-top: -210px;
+   margin-left: 125px;
+   height: 190px;
+   width: 120px;
+   color: blanchedalmond;
+   background-color: black;
+  }
+  .artist-info:hover{
+    /* background-color: brown; */
+    color: chocolate;
+  }
+  .inside-setting{
+    background-image: url("./images/Ed_Sheeran-6886_\(cropped\).jpg");
+    background-size: contain;
+  }
+.music-card{
+  /* margin-top: -20px; */
+  background-color: white;
+ 
+}
+.music-sub-parts{
+  margin-top: 10px;
+  height: 112px;
+}
+.singer-image{
+  background-image: url("./images/divine.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: max-content;
+  background-repeat: repeat-x;
+  background-position: center;
+  border: 10px solid black;
+  margin-top: -4px;
+  
+ 
+}
+
+audio{
+  width: 240px;
+  height: 30px;
+  margin-top: 160px;
+}
+
+.playlist-screen{
+  background-color: transparent;
+  background-image: url("./images/music2.jpg");
+  width: 250px;
+  height: 191px;
+  margin-top: -15px;
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+.pubg{
+  background-image: url("./images/pubg.jpg");
+  width: 246px;
+  height: 282px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-repeat: repeat-y;
+}
+.inside-setting{
+  background-image: url("./images/settings1.png");
+  width: 300px;
+  height: 282px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-repeat: repeat-y;
+}
+
+.song-btn{
+  margin-left: -50px;
+  /* margin-top:100px ; */
+  z-index: 10;
+  color: #000;
+  
+  height: 0px;
+}
+#song-btn{
+  margin-top: 80px;
+  height: 20px;
+  width: 50px;
+  z-index: 5;
+  order: 4;
+}
+#play-btn{
+  margin-left: -50px;
+  z-index: 3;
+  height: 0px;
+  margin-left: 150px;
+  margin-top: 105px;
+}
+.song-btn button{
+ border: 0px;
+ margin-left: -7px;
+ background-color: white;
+ 
+ color: grey;
+ text-transform: uppercase;
 }

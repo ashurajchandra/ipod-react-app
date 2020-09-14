@@ -1,13 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Setting extends Component {
-    render() {
-        return (
-            <div>
-                 <h1>Settings</h1>
-            </div>
-        );
-    }
-}
+
+const Setting = (props) => {
+
+
+    return (
+        <div className="outer-container">
+        <div className="lists">
+        <div className="inside-setting">
+               
+           </div>
+        </div>
+        </div>
+    );
+};
 
 export default Setting;
+
+

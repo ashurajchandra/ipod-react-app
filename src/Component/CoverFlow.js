@@ -3,9 +3,13 @@ import React, { Component } from 'react';
 class CoverFlow extends Component {
     render() {
         return (
-            <div>
-                <h1>CoverFlow</h1>
-            </div>
+            <div className="outer-container">
+            <div className="lists">
+            <div className="inside-coverflow">
+                 {/* <h1>coverflow</h1> */}
+       </div>
+           </div>
+       </div>
         );
     }
 }

@@ -2,9 +2,10 @@ import ZingTouch from 'zingtouch';
 import React, { Component } from 'react';
 import CoverFlow from './CoverFlow';
 import Music from './Music';
-import Games from './Games';
+import Game from './Game';
 import Setting from './Setting';
 import MyList from './MyList';
+
 
 
 
@@ -16,7 +17,7 @@ constructor(){
         toggleScreen: true,
         showCoverFlow: false,
         showMusic: false,
-        showGames: false,
+        showGame: false,
         showSetting: false,
        
     }
@@ -134,13 +135,18 @@ constructor(){
 
     render() {
         //getting items from state
-        const { toggleScreen,  showCoverFlow, showMusic, showGames, showSetting} = this.state;
+        const { toggleScreen,showGame,  showCoverFlow, showMusic,  showSetting} = this.state;
         return (
             <div className="Ipod">
-                {toggleScreen? <MyList handleMenuClick={this.handleMenuClick}/>
-                : showCoverFlow ? <CoverFlow handleMenuClick={this.handleMenuClick}/>
+                {toggleScreen? <MyList 
+                showCoverFlow={showCoverFlow} 
+                     showGame={showGame}
+                     showMusic={showMusic} 
+                     showSetting={showSetting}
+                    />
+                : showCoverFlow ? <CoverFlow onClick={this.handleMenuClick}/>
                 : showMusic ? <Music handleMenuClick={this.handleMenuClick}/>
-                : showGames ? <Games handleMenuClick={this.handleMenuClick}/>
+                : showGame ? <Game on={this.handleMenuClick}/>
                 :  <Setting/>   
                 
                  
@@ -154,12 +160,13 @@ constructor(){
                        </button> */}
                        <div className="mouse-rotate"  onClick={this.handleZesture}>
                            <div className="menu-btn">
-                               <button id="menu-btn"   onClick={this.hnandleMenuClick}>Menu</button>
+                               <button id="menu-btn"   onClick={this.handleMenuClick}>Menu</button>
                            </div>
                            <div className="enter-btn" >
-                               <button id="enter-btn" onClick ={this.toggleButton}></button>
+                               <button id="enter-btn" onClick ={this.handleToggleButton}></button>
                            </div>
                        </div>
+                     
 
              
                 
