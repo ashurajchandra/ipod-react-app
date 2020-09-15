@@ -4,6 +4,29 @@ body{
   /* background-size: cover;
   background-repeat: no-repeat; */ 
 }
+#owner{
+  margin-top: -8%;
+  position: absolute;
+  margin-left: 37%;
+  text-shadow: 2px 2px 2px red;
+  /* border: 5px solid black; */
+  animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
 
 ul{
   margin:0px;
@@ -109,11 +132,13 @@ height:80px;
 
 #enter-btn{
   margin-left: 120px;
-  margin-top: -34px;
+  margin-top: -32px;
   height:70px;
-  width: 70px;
+  width: 68px;
   border-radius: 50%;
-  /* background-color: black; */
+  color:transparent;
+   background-color: transparent; 
+   border: 1px solid grey;
 
 }
 .active {
@@ -261,12 +286,15 @@ audio{
   height: 0px;
   margin-left: 150px;
   margin-top: 105px;
+  background-color: transparent;
+  color:transparent;
 }
 .song-btn button{
  border: 0px;
- margin-left: -7px;
+ margin-left: -6px;
  background-color: white;
  
  color: grey;
  text-transform: uppercase;
 }
+
