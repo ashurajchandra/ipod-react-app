@@ -11,6 +11,7 @@ class MyList extends Component {
             }=this.props;
          
 
+            // showing a particular list active on rotation
         return (
            <div className="outer-container">
             <div className="lists">

@@ -153,7 +153,7 @@ class Music extends Component {
                 }
    
             </div>
-               {/* rendering wheel div  */}
+               {/* rendering wheel and bttns  */}
                <div className="mouse-rotate"  id="inside-music" onClick={this.handleZesture}>
                 ..
             <div className="menu-btn">

@@ -4,6 +4,7 @@ body{
   /* background-size: cover;
   background-repeat: no-repeat; */ 
 }
+           /* setting css properties and animation  */
 #owner{
   margin-top: -8%;
   position: absolute;
@@ -27,7 +28,7 @@ body{
     }
   }
 
-
+     /* setting up properties of lists */
 ul{
   margin:0px;
   padding:0px;
@@ -52,8 +53,8 @@ ul{
   background-image: url("./images/cover1.jpeg");
  
 }
+            /* setting up properties for scrren of main lists */
 .inside-list{
-  background-color: grey;
   background-image: url("./images/iscreen.jpeg");
   background-size: cover;
   width:50%;
@@ -102,7 +103,7 @@ background-color:blue;
   height:220px;
   width: 300px;
 }
-
+               /* setting up styles for zingtouch and buttons portion */
 .mouse-rotate{
   position: absolute;
   /* margin-top:3%; */
@@ -146,7 +147,7 @@ height:80px;
   width:100%;
   color: black;
 }
-
+              /* setting up styles for displaying music componenets */
 .music-card{
   background-image: url("./images/imusic.jpg");
   background-repeat: repeat-x;
@@ -188,6 +189,10 @@ height:80px;
     border-radius: 50%;
     background-color: grey;
   }
+
+
+
+        /* setting up styles for artist components */
   .artist{
     background-image: url("./images/Ed_Sheeran-6886_\(cropped\).jpg");
     background-size: contain;

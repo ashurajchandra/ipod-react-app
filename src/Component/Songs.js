@@ -11,7 +11,9 @@ class MusicList extends Component {
             playing: true
         }
     }
+           
 
+    //  setting up function for play and pause of song
     handlePlay=()=> {
         const x=document.getElementById('mp3_file');
         const {playing}=this.state;
